@@ -1,0 +1,17 @@
+<h1>POSTS!</h1>
+<h2>for blog: <%= @blog.name %></h2>
+
+<ul>
+  <% if !@posts.blank? %>
+    <% for post in @posts %>
+      <li>
+        <h3><%= post.title %></h3>
+        <p><%= post.body %></p>
+      </li>
+    <% end %>
+  <% else %>
+    
+  <% end %>
+</ul>
+
+<%= link_to 'New Post', new_blog_post_path(@blog) %>

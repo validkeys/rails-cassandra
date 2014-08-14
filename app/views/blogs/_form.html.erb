@@ -11,7 +11,7 @@
     </div>
   <% end %>
 
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <%= f.text_field :name %>
+  <%= f.text_area :description, size: "60x12" %>
+  <%= f.submit %>
 <% end %>

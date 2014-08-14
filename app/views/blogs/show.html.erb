@@ -1,4 +1,14 @@
 <p id="notice"><%= notice %></p>
+<h1><%= @blog.name %></h1>
+<p><%= @blog.description %></p>
 
+<ul>
+<% @blog.posts.each do |post| %>
+  <li>
+    <h3><%= post.title %></h3>
+    <p><%= post.body %></p>
+  </li>
+<% end %>
+</ul>
 <%= link_to 'Edit', edit_blog_path(@blog) %> |
 <%= link_to 'Back', blogs_path %>
