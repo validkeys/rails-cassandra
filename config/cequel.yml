@@ -1,0 +1,19 @@
+development:
+  host: '127.0.0.1'
+  port: 9042
+  keyspace: cassy_development
+
+test:
+  host: '127.0.0.1'
+  port: 9042
+  keyspace: cassy_test
+
+production:
+  hosts:
+    - 'cass1.cassy.biz'
+    - 'cass2.cassy.biz'
+    - 'cass3.cassy.biz'
+  port: 9042
+  keyspace: cassy_production
+  username: 'myappuser'
+  password: 'password1'
