@@ -10,10 +10,8 @@ test:
 
 production:
   hosts:
-    - 'cass1.cassy.biz'
-    - 'cass2.cassy.biz'
-    - 'cass3.cassy.biz'
-  port: 9042
+    - '107.170.180.21'
+  port: 9160
   keyspace: cassy_production
-  username: 'myappuser'
-  password: 'password1'
+  # username: 'myappuser'
+  # password: 'password1'
